@@ -1,0 +1,154 @@
+:root {
+	--primary-color: lightblue;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 1300px;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	height: 100vh;
+	display: flex;
+}
+
+label {
+	visibility: hidden;
+}
+
+/*section_login_form*/
+#section_login_form img {
+	max-width: 150px;
+	height: 120px;
+}
+
+form {
+	border: 1px solid gray;
+	border-radius: 5px;
+	margin-left: 20px;
+	padding-left: 20px;
+	box-shadow: 1px 1px 1px var(--primary-color);
+	width: 400px;
+	height: 400px;
+}
+
+.login {
+	margin-top: 3rem;
+}
+
+h3 {
+	display: inline;
+	border-bottom: 3px solid var(--primary-color);
+}
+
+
+input {
+	padding: 10px 0;
+	border-radius: 2px;
+	padding-left: 5px;
+}
+
+#extra {
+	font-size: 11px;
+	text-align: right;
+	margin-right: 2rem;
+}
+
+#extra a {
+	color: coral;
+	text-decoration: underline;
+}
+
+#extra a:hover {
+	opacity: 0.6;
+}
+
+#username {
+	margin-top: 3rem;
+	width: 90%;
+}
+
+#password {
+	margin-top: 3rem;
+	width: 90%;	
+}
+
+#btn {
+	padding: 10px;
+	width: 90%;
+	background: var(--primary-color);
+}
+
+#section_img {
+	max-width: 700px;
+	height: 500px;
+	margin: auto;
+}
+
+@media (min-width:761px) and (max-width:1024px){
+
+	header {
+		flex-direction: column;
+	}
+
+	#section_login_form {
+		flex: 1;
+		order: 2;
+	}
+
+	#section_login_form img {
+		position: absolute;
+		top: 1px;
+		left: 2px;
+		max-width: 300px;
+		height: 190px;
+	}
+
+	#section_img {
+		max-width: 600px;
+		margin: 9rem auto;
+	}
+
+	form {
+		margin: 0 auto;
+		width: 700px;
+		height: 550px;	
+	}
+
+	h3 {
+	font-size: 2.5rem;
+	}
+
+	input {
+	padding: 20px 0;
+	border-radius: 2px;
+	padding-left: 5px;
+	font-size: 25px;
+	}
+
+	#extra {
+	font-size: 20px;
+	text-align: right;
+	margin-right: 3rem;
+	}
+
+	#btn {
+	padding: 20px;
+	width: 90%;
+	font-size: 20px;
+	}
+
+}
